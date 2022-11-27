@@ -527,13 +527,13 @@ footer {
 
 /*portfolio--------------------------------------------*/
 
-.portfolio-btn-list {
+.portfolio-nav {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-btn {
+.portfolio-nav__btn {
   padding: 6px 22px;
   border-radius: 3px;
   background-color: var(--white-background-color);
@@ -549,32 +549,32 @@ footer {
   transition: background-color var(--animation), color var(--animation);
 }
 
-.portfolio-btn-item {
+.portfolio-nav__item {
   transition: box-shadow var(--animation);
 }
 
-.portfolio-btn-item:not(:last-child) {
+.portfolio-nav__item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio-btn-item:hover,
-.portfolio-btn-item:focus {
+.portfolio-nav__item:hover,
+.portfolio-nav__item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-nav__btn:hover,
+.portfolio-nav__btn:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
 
-.work-examples-list {
+.card-set {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--indent-card));
   margin-left: calc(-1 * var(--indent-card));
 }
-.work-examples-item {
+.card {
   flex-basis: calc(100% / 3 - var(--indent-card));
   margin-top: var(--indent-card);
   margin-left: var(--indent-card);
@@ -582,16 +582,16 @@ footer {
   transition: box-shadow var(--animation);
 }
 
-.work-examples-item:hover {
+.card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.work-examples-item:hover .work-example-overlay {
+.card:hover .work-example-overlay {
   transform: translateY(0);
 }
 
-.work-examples {
+.card__name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -599,24 +599,24 @@ footer {
   color: var(--dark-text-color);
 }
 
-.work-examples-content {
+.card__content {
   padding: 20px 24px;
   border: 1px solid var(--card-background-color);
   border-top: none;
 }
 
-.work-examples-filter {
+.card__filter {
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-text-color);
 }
 
-.work-examples-thumb {
+.card__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.work-example-overlay {
+.card__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -628,7 +628,7 @@ footer {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.work-overlay-text {
+.card__text {
   font-size: 18px;
   color: var(--white-text-color);
   letter-spacing: 0.03em;
